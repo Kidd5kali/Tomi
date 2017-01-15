@@ -10,98 +10,184 @@ Released under the MIT license: http://jsbin.mit-license.org
 <html>
      
      <head>
+<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-        
-       <style>
-           
-           h1 {color:#8F4E1B; font-family: "Lora", serif;}
-           h2 {color:#8F4E1B; font-family: "Lora", serif;}
-           #old {float: right; border-color: #8F4E1B;}
-           #eng {float: left; border-color: #8F4E1B; }
-           #des {float: right; border-color: #8F4E1B;}
-           body {background:silver; font-family: "Roboto", sans-serif;}
-           
+    <style>
+        h1 {
+            color: #8F4E1B;
+            font-family: "Lora", serif;
+        }
 
-        </style>
+        h2 {
+            color: #8F4E1B;
+            font-family: "Lora", serif;
+        }
 
+        #old {
+            float: right;
+            border-color: #8F4E1B;
+        }
 
+        #eng {
+            float: left;
+            border-color: #8F4E1B;
+        }
 
-        <title>Autózás története</title>
-        <meta charset="utf-8">
-        <meta name="keywords" content="autó,történelem,">
-     </head>
+        #des {
+            float: right;
+            border-color: #8F4E1B;
+        }
 
-     <body>
-        <h1><ins>Az autózás történelme</ins></h1>
-        <br>
-        <hr>
-        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Patent-Motorwagen_Nr.1_Benz_2.jpg/1280px-Patent-Motorwagen_Nr.1_Benz_2.jpg" alt="Old mobile" width="304" height="228" id="old" hspace="20" border="5">
-        <p>Az autó (elnevezése az automobile rövidítése, a görög auto-: ön- előtagból és a latin mobilis: mozgó, mozgatható szóból) egy olyan, földön közlekedő, kerekeken guruló jármű, amely saját hajtóművel önerőből képes mozgásra, nem egy másik jármű vagy állat mozgatja.<br><br>
-        Hétköznapi jelentésében az autó a gépkocsi, egy kerekeken guruló, saját motorja által hajtott jármű. A legtöbb meghatározás olyan szabályszerűségekkel írja le mint amit elsősorban aszfaltútra terveztek, 1-8 utast szállíthat, jellemzően négy kerékkel rendelkezik, és felépítése a személyszállításra inkább alkalmassá teszi, mint áruszállításra. Mindazonáltal a leírások pontossága nem tökéletes, az eltérő feladatokra létrehozott számos különböző gépkocsitípus miatt.<br><br>
-        Az autó viszonylag gyorsan kilépett az egyszerű szárazföldi jármű szerepköréből, amit csak közlekedésre használnak és jelentős kulturális, valamint emocionális értékkel rendelkező, életmódot befolyásoló státuszszimbólummá emelkedett, kiváltképp az átlagosnál igényesebb vagy gyorsabb változatai. Hamar megjelent a motorsportban is, a feltalálását követő pár évtizeden belül már autóversenyeket is rendeztek.
-         </p></div>
-        
-        <p>&nbsp;</p>
-        <hr>
-        <h2 align="right"><ins>Első motorok</ins></h2>
-        <div><img src="https://oldmachinepress.files.wordpress.com/2012/11/rolls-royce-pennine-jones-cutaway.jpg" alt="Engine" width="304" height="228p" id="eng" hspace="20" border="5">
+        body {
+            background: silver;
+            font-family: "Roboto", sans-serif;
+        }
+        .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: cornsilk;
+    font-family: 'Yatra One', cursive;
+}
+
+#mukodj {
+    float: right;
+}
+
+#mukodj a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#mukodj a:hover, .dropdown:hover .dropbtn {
+    background-color: burlywood;
+}
+
+#mukodj.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    </style>
+</head>
+<body bgcolor="silver">
+        <ul class="navbar">
+            <li id="mukodj"><a href="https://kidd5kali.github.io/otodikSebesseg/">Kezdőlap</a></li>
+            <li id="mukodj" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Történet</a>
+                <div class="dropdown-content">
+                    <a href="https://kidd5kali.github.io/Tomi/">Az autózás történelme</a>
+                    <a href="https://kidd5kali.github.io/Kristof/">Híres emberek híres autói</a>
+                </div>
+            </li>
+            <li id="mukodj"><a href="https://kidd5kali.github.io/Mate/">Autókereső</a></li>
+            <li id="mukodj"><a href="javascript:void(0)">Kapcsolat</a></li>
+            <li id="mukodj"><a href="http://yellowroad.hu/">Powered by</a></li>
+        </ul>
+    <h1><ins>Az autózás történelme</ins></h1>
+    <br>
+    <hr>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Patent-Motorwagen_Nr.1_Benz_2.jpg/1280px-Patent-Motorwagen_Nr.1_Benz_2.jpg" alt="Old mobile" width="304" height="228" id="old" hspace="20" border="5">
+        <p>
+            Az autó (elnevezése az automobile rövidítése, a görög auto-: ön- előtagból és a latin mobilis: mozgó, mozgatható szóból) egy olyan, földön közlekedő, kerekeken guruló jármű, amely saját hajtóművel önerőből képes mozgásra, nem egy másik jármű vagy állat mozgatja.<br><br>
+            Hétköznapi jelentésében az autó a gépkocsi, egy kerekeken guruló, saját motorja által hajtott jármű. A legtöbb meghatározás olyan szabályszerűségekkel írja le mint amit elsősorban aszfaltútra terveztek, 1-8 utast szállíthat, jellemzően négy kerékkel rendelkezik, és felépítése a személyszállításra inkább alkalmassá teszi, mint áruszállításra. Mindazonáltal a leírások pontossága nem tökéletes, az eltérő feladatokra létrehozott számos különböző gépkocsitípus miatt.<br><br>
+            Az autó viszonylag gyorsan kilépett az egyszerű szárazföldi jármű szerepköréből, amit csak közlekedésre használnak és jelentős kulturális, valamint emocionális értékkel rendelkező, életmódot befolyásoló státuszszimbólummá emelkedett, kiváltképp az átlagosnál igényesebb vagy gyorsabb változatai. Hamar megjelent a motorsportban is, a feltalálását követő pár évtizeden belül már autóversenyeket is rendeztek.
+        </p>
+    </div>
+
+    <p>&nbsp;</p>
+    <hr>
+    <h2 align="right"><ins>Első motorok</ins></h2>
+    <div>
+        <img src="https://oldmachinepress.files.wordpress.com/2012/11/rolls-royce-pennine-jones-cutaway.jpg" alt="Engine" width="304" height="228" id="eng" hspace="20" border="5">
         <p>Amikor a svájci származású Isaac de Rivaz (1752-1829) 1804-ben készített járművével jó egy métert haladt előre, ezzel egy új technikai korszakot nyitott meg, ugyanis a mai autómotor ősatyját hozta mozgásba. Rivaz a gőz helyett éghető gázokkal kísérletezett. Egy hengerben, amit egy szokványos kézikocsihoz rögzített, meggyújtotta az ott tárolt folyadékot. Az égés erejét egy dugattyún át elvezette, ez hozta mozgásba járművét. 1807. január 30-án Rivaz elnyerte „az éghető gáz vagy más anyagok robbanásának felhasználásából nyert motorerőért” szabadalmat.<p>&nbsp;</p>
         </p>
-        </div>
-        
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <hr>
-        <h2><ins>Tervezés, dizájn</ins></h2>
-        <div><img src="https://essencedesigns.files.wordpress.com/2010/12/mu.jpg" alt="Desing" style="width:304px;height:228px;" id="des" hspace="20" border="5"><p>Az autók külsőleg először még a korábbi vagy épp korabeli lovaskocsik és hintók külsejét követték, szögletesek voltak, csupa derékszöggel mindenütt. Ez már csak azért is így volt, mert abban az időben ezek voltak az uralkodó jármű-alkalmatosságok, ezért javarészt ezek alkatrészei álltak rendelkezésre járműépítéshez, ahogy ez Daimlerék esetében is látszik. Kezdetben ez elég is volt, ám amikor később egyre jobb, gyorsabb motorokat tudtak előállítani, rájöttek, hogy a szögletes forma nagy légellenállást tanúsít, ami jelentősen lerontja a motorok teljesítményét.</p>
-        </div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <hr>
+    </div>
 
-        <h2><ins>Üzemanyag és meghajtástechnológiák</ins></h2>
-        <br>
-        <ul>
-            <li>Belsőégésű motorok</li><li>Nem belsőégésű motorok</li><li>Elektromos motorok</li><li>Hibrid autók</li><li>Gázautók</li>
-        </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr>
+    <h2><ins>Tervezés, dizájn</ins></h2>
+    <div>
+        <img src="https://essencedesigns.files.wordpress.com/2010/12/mu.jpg" alt="Desing" style="width:304px;height:228px;" id="des" hspace="20" border="5"><p>Az autók külsőleg először még a korábbi vagy épp korabeli lovaskocsik és hintók külsejét követték, szögletesek voltak, csupa derékszöggel mindenütt. Ez már csak azért is így volt, mert abban az időben ezek voltak az uralkodó jármű-alkalmatosságok, ezért javarészt ezek alkatrészei álltak rendelkezésre járműépítéshez, ahogy ez Daimlerék esetében is látszik. Kezdetben ez elég is volt, ám amikor később egyre jobb, gyorsabb motorokat tudtak előállítani, rájöttek, hogy a szögletes forma nagy légellenállást tanúsít, ami jelentősen lerontja a motorok teljesítményét.</p>
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <hr>
 
-        <hr>
-        <h2><ins>Autómárkák</ins></h2>
-        <br>
-        <select name="markak" id="lstMarkak" onchange="mutat(this);">
-            <option value="Válasszon">Válasszon</option>
-            <option value="Audi">Audi</option>
-            <option value="BMW">BMW</option>
-            <option value="Cadilac">Cadilac</option>
-            <option value="Fiat">Fiat</option>
-            <option value="Ford">Ford</option>
-            <option value="Mercedes-Benz">Mercedes-Benz</option>
-            <option value="Tesla">Tesla</option>
-            <option value="Volkswagen">Volkswagen</option>
-</select>
-<br><br>
-<div id="lista"></div>
-            <br><br><br>
-           
+    <h2><ins>Üzemanyag és meghajtástechnológiák</ins></h2>
+    <br>
+    <ul>
+        <li>Belsőégésű motorok</li>
+        <li>Nem belsőégésű motorok</li>
+        <li>Elektromos motorok</li>
+        <li>Hibrid autók</li>
+        <li>Gázautók</li>
+    </ul>
 
-             
+    <hr>
+    <h2><ins>Autómárkák</ins></h2>
+    <br>
+    <select name="markak" id="lstMarkak" onchange="mutat(this);">
+        <option value="Válasszon">Válasszon</option>
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Cadilac">Cadilac</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Ford">Ford</option>
+        <option value="Mercedes-Benz">Mercedes-Benz</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Volkswagen">Volkswagen</option>
+    </select>
+    <br><br>
+    <div id="lista"></div>
+    <br><br><br>
 
 
-            
-            <script type="text/javascript" src="Scripts/markak.js"></script>
-         <script type="text/javascript"></script>
 
-<br><br><br><br>
-<hr>
 
-     <script id="jsbin-javascript">
+
+
+    <script type="text/javascript" src="Scripts/markak.js"></script>
+    <script type="text/javascript"></script>
+
+    <br><br><br><br>
+    <hr>
+
+    <script id="jsbin-javascript">
 function mutat(x) {
 
 var ertek;
@@ -132,8 +218,8 @@ if(ertek=="Tesla")
 if(ertek=="Volkswagen")
 {document.getElementById("lista").innerHTML="A Volkswagent 1937-ben alapította a nemzetiszocialista német kormány, eredetileg a Volkswagen Bogár gyártására. Adolf Hitler arra utasította az akkori fejlesztőket, élükön Ferdinand Porschével, hogy egy KdF-Wagent, egy „népautót” tervezzenek, mely olcsó, egyszerű , de minősége verhetetlen. A második világháború után 1945-ben az angol hadsereg vette át a lebombázott romokban lévő gyár irányítását. Elkezdődött újra a Bogár gyártása. 1948-ban a brit kormány visszaadta a gyárat teljes egészében a németeknek, akik a volt Opel elnökét, Heinrich Nordhoffot nevezték ki a gyár főnökének."; }
 
-} 
-</script>
+}
+    </script>
 </body>
 
 
